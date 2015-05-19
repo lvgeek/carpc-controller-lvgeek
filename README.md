@@ -1,5 +1,5 @@
 ## Modified from carpc-controller @ www.engineering-diy.blogspot.com
-Added support for BC127 Bluetooth module for sound and telephone
+Added support for BC127 Bluetooth module for sound and telephone<br>
 Added flags to include the SI4703 FM module
 
 ## Description
