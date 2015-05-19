@@ -1,3 +1,7 @@
+## Modified from carpc-controller @ www.engineering-diy.blogspot.com
+Added support for BC127 Bluetooth module for sound and telephone
+Added flags to include the SI4703 FM module
+
 ## Description
 Raspberry PI controller<br>
 This is a Raspberry PI GPIO controller responsible for handling all GPIO events. 
