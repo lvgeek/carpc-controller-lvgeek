@@ -2,6 +2,10 @@
 # Ip address of the XBMC machine
 [ip]:localhost
 
+# BC127 settings port & baud
+port:/dev/ttyAMA0
+baud:115200
+
 # Radio volume and XBMC volume are unified
 unified_volume:1
 
