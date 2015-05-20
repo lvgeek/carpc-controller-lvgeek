@@ -386,6 +386,8 @@ static void Events_ReadConfig(const char *pFileName)
     uint8_t i;
     char    *pData;
     uint8_t ipAddress[INET_ADDRSTRLEN];
+    char    *serPort
+    char    *serBaud
 
     memset((void*)ipAddress, 0, sizeof(ipAddress));
     memset(mButtons, 0, sizeof(button_t) * BUTTONS_NB);
@@ -410,6 +412,26 @@ static void Events_ReadConfig(const char *pFileName)
             if(!pBuffer[i]) break;
             if(pBuffer[i] == ':' || pBuffer[i] == '\n' || pBuffer[i] == '\r' || pBuffer[i] == '#')
                 pBuffer[i] = 0;
+        }
+
+        /* Get serial port */
+        pData = strstr(pBuffer, "port");
+        if(pData)
+        {
+            pData += strlen(pData) + 1;
+            strcpy((char*)serPort, pData);
+            pData += strlen(pData);
+            continue;
+        }
+
+        /* Get serial baud */
+        pData = strstr(pBuffer, "baud");
+        if(pData)
+        {
+            pData += strlen(pData) + 1;
+            strcpy((char*)serBaud, pData);
+            pData += strlen(pData);
+            continue;
         }
 
         /* Get ip address */
