@@ -27,6 +27,7 @@ extern "C" {
 #define XBMCBUILTIN_CMD         "xbmcbuiltin_"
 #define XBMCBUTTON_CMD          "KB_"
 #define RADIO_CMD               "radio_"
+#define BC127_CMD               "BC127_"
 
 #define RADIO_CMD_SEEK_DOWN     "radio_seek_down"
 #define RADIO_CMD_SEEK_UP       "radio_seek_up"
