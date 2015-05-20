@@ -48,7 +48,8 @@ typedef unsigned long long int  uint64_t;
  */
 typedef enum systemModes_tag {
     gModeRadio_c = 0x00,
-    gModeXBMC_c = 0x01
+    gModeXBMC_c = 0x01,
+    gModeBC127_c = 0x02
 } systemModes_t;
 
 typedef struct encoder_tag {
